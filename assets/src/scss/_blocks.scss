@@ -1,0 +1,20 @@
+/* ---------------------------------------
+	General
+--------------------------------------- */
+
+.full-height {
+  min-height: 100vh;
+}
+
+/* ---------------------------------------
+	ACF Sample Block
+--------------------------------------- */
+
+// @import "blocks/acf-sample";
+h1 {
+  color: #af2323;
+  line-height: 3;
+}
+body{
+  background-color:$backgroundColor;
+}

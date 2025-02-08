@@ -1,0 +1,128 @@
+// /* ---------------------------------------
+// 	Typography
+// --------------------------------------- */
+
+ h1, h2, h3, h4, h5, h6,
+ .h1, .h2, .h3, .h4, .h5, .h6 {
+   font-weight: 700;
+ 	a {
+ 		color: inherit;
+ 	}
+ }
+
+ h1, .h1, .has-h-1-font-size {
+   font-size: toRem(48);
+
+ }
+
+ h2, .h2, .has-h-2-font-size {
+  font-size: toRem(44);
+ }
+
+ h3, .h3, .has-h-3-font-size {
+  font-size: toRem(40);
+ }
+
+ h4, .h4, .has-h-4-font-size {
+  font-size: toRem(36);
+ }
+
+ h5, .h5, .has-h-5-font-size {
+  font-size: toRem(32);
+ } 
+
+ h6, .h6, .has-h-6-font-size {
+  font-size: toRem(24);
+ }
+
+ p {
+   margin-bottom: 1rem;
+ 	/*basic paragraph styles*/
+ 	&:empty {
+ 		display: none;
+ 	}
+
+ 	a {
+ 		text-decoration: underline;
+ 	}
+ }
+
+ ul {
+ 	/*basic list styles*/
+ 	font-size: inherit;
+
+ 	li {
+ 		/*basic list-item styles*/
+ 	}
+ }
+
+ ul, ol {
+ 	list-style-position: inside;
+ }
+
+ blockquote {
+
+ }
+
+ address {
+ 	font-style: normal;
+ }
+
+ a {
+ 	 color: teal;
+
+ 	transition: all 0.2s ease-in-out;
+
+ 	&:hover, &:focus {
+ 		/*basic hover and focus effects*/
+ 		 color: $linksColorHover;
+ 	}
+ }
+
+ a, button, .button, input[type='submit'], input[type='reset'], input[type='button'] {
+ 	// Change opacity to 0.5 and color by client request.
+ 	//-webkit-tap-highlight-color: rgba(invert($main-color), 0.5) !important;
+ }
+
+ /* ---------------------------------------
+ 	Forms/Inputs
+ --------------------------------------- */
+
+ .no-outline {
+ 	button, a, [tabindex] {
+ 		outline: none;
+ 	}
+ }
+
+ /* Placeholder styling */
+
+ input, textarea {
+ 	&::placeholder {
+ 		opacity: 1;
+ 	}
+ }
+
+ button, .button, input[type='submit'], input[type='reset'], input[type='button'] {
+ 	//border-width: $button-hollow-border-width;
+ 	text-decoration: none;
+ 	transition: all 0.2s ease-in-out;
+
+ 	&:hover, &:focus {
+
+ 	}
+
+ 	&.hollow {
+ 		&:hover, &:focus {
+
+ 		}
+ 	}
+ }
+
+ /* Button additional styles */
+
+ .button {
+   padding: toRem(10) toRem(20);
+ 	&:hover, &:focus {
+ 		/*basic hover and focus effects*/
+ 	}
+ }
